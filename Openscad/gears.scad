@@ -11,11 +11,11 @@ motor_shaft = 5.2;
 rotate([180,0,0]) translate([0,0,-7])
 //translate ([19.9028,0,1]) //was translate ([19.2588,0,1])
 //translate([0,50,0])
-	large_gear();
+//	large_gear();
 //translate([10,10,0])
 //rotate([0,0,0]) translate([0,0,-3]) rotate([0,0,0])
 	//color([1,1,1,0.3])
-//		small_gear();
+		small_gear();
 
 module small_gear(){
 translate ([0,0,0])
@@ -77,12 +77,12 @@ difference(){
 	twist=0,
 	involute_facets=0);
 	
-	translate([0,0,5]) cylinder(h=6, r=5.8/sqrt(3),$fn=6);
-	cylinder(r=3.3/2,h=40,center=true);
+	translate([0,0,5]) cylinder(h=6, r=7/sqrt(3),$fn=6);
+	cylinder(r=4.3/2,h=40,center=true);
 	difference(){
 		cylinder(r=22.5,h=20,center=true,$fn=128); 
 		translate([0,0,2.5]) cylinder(r=5.5,h=7.5,$fn=64);
-		translate([0,0,1.01]) cylinder(r2=5.5,r1=2,h=1.5);
+		translate([0,0,1.01]) cylinder(r2=5.5,r1=3,h=1.5);
 		for(i=[0:5])
 		rotate([0,0,i*360/5])
 		translate([0,15,5.5]) {
