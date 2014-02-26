@@ -11,11 +11,11 @@ motor_shaft = 5.2;
 rotate([180,0,0]) translate([0,0,-7])
 //translate ([19.9028,0,1]) //was translate ([19.2588,0,1])
 //translate([0,50,0])
-//	large_gear();
+	large_gear();
 //translate([10,10,0])
 //rotate([0,0,0]) translate([0,0,-3]) rotate([0,0,0])
 	//color([1,1,1,0.3])
-		small_gear();
+		//small_gear();
 
 module small_gear(){
 translate ([0,0,0])

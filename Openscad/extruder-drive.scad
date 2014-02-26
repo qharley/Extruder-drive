@@ -1,3 +1,9 @@
+// Morgan 1.75 Extruder by qharley
+// Based heavilly off the RepRapPro mini extruder
+//
+// Modified to take the more readilly available 624 bearings, and 10mm OD drive gears.
+// Feb 2014
+
 use <library.scad>;
 use <gears.scad>;
 include <config.scad>
@@ -14,7 +20,7 @@ drive_offset_y=17;
 bite=0;
 motor_hole_pitch=31;//26;
 frame_clamp = true;  // Flattens end where Mendel frame clamp lands - AB
-gear_play = -1;			// Positive value will give more play on gears (default = -1)
+gear_play = -0.5;			// Positive value will give more play on gears (default = -0.5)
 							// Moves motor mount position
 idler_slit = 1;			// Gap width - default = 1
 //da8=sqrt(2+sqrt(2))/4;
